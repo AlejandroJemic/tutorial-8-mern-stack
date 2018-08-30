@@ -1,0 +1,7 @@
+{
+    "preset": [
+        "env",
+        "stage-0",
+        "react"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "tutorial",
+  "main": "index.js",
+  "scripts": {
+    "compile": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroJemic/tutorial-8-mern-stack.git"
+  },
+  "keywords": [
+    "tutorial",
+    "mern"
+  ],
+  "author": "aljandor jemic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejandroJemic/tutorial-8-mern-stack/issues"
+  },
+  "homepage": "https://github.com/AlejandroJemic/tutorial-8-mern-stack#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
