@@ -5,7 +5,7 @@ module.export = {
     entry: path.resolve('./src/index.js'),
     output: {
         path: path.resolve('./dist'),
-        filename: 'bundle.js',
+        filename: 'main.js',
     },
     module:{
         loaders : [
