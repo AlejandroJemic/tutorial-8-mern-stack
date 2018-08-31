@@ -1,13 +1,11 @@
-import path = require ('path'); 
+const path = require ('path'); 
 
 module.export = {
     devtool: "source-map",
-    context: path.join('__dirname', src),
-    entry: ["./main.js" ],
+    entry: path.resolve('./src/index.js'),
     output: {
-        path: path.join(__dirname, 'www'),
-        filename: "bundle.js",
-         publicPath: "/dist"
+        path: path.resolve('./dist'),
+        filename: 'bundle.js',
     },
     module:{
         loaders : [
