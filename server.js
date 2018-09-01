@@ -12,7 +12,8 @@ const app = express();
 const compiler = webpack(webpackConfig)//crea el compilador
 
 //agrega los middlewares
-app.use(express.static(__dirname + 'www')); //sirve los archivos compilados
+app.use(express.static(__dirname + 'www')); //sirve los archivos  estaticos
+app.use(express.static(__dirname + '/dist')); //sirve los archivos compilados
 app.use(webpackDevMiddleware(compiler,{
     hot: true,
     publicPath: path.resolve('./dist'),
