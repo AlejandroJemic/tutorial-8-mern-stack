@@ -9,15 +9,19 @@ module.export = {
     },
     module:{
         loaders : [
-            {test:  /\.js$/,
+            { test: /\.js$/,
+            include: path.resolve('./src'),
+            use: [{
+                loader:["babel-loader"]
+            }],
             exclude: /node_modules/,
             loaders: ["babel-loader"]
             }
         ]
-    },
+    },  
     resolve: {
         module: [
-            path.join(__dirname,'node_modules')
+            path.resolve('./node_modules')
         ]
     }
 }
